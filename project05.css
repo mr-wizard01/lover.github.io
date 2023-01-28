@@ -1,0 +1,491 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  z-index: -1000;
+  overflow: hidden;
+}
+
+section {
+  height: 100vh;
+}
+
+.maincontainer {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background: url(img1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.maincontainer .logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: orange;
+}
+
+.maincontainer .logo h3 {
+  font-size: 15px;
+  color: blue;
+  font-weight: 700;
+  border: 1px solid gray;
+}
+
+.maincontainer .logo h3 span {
+  background-color: crimson;
+  font-family: cursive;
+  letter-spacing: 2px;
+}
+
+.maincontainer .list {
+  position: absolute;
+  left: 50%;
+  top: 124px;
+  transform: translateX(-50%);
+}
+
+.maincontainer .list ul {
+  position: relative;
+}
+
+.maincontainer .list ul li {
+  list-style: none;
+  margin: 10px;
+  background-color: crimson;
+}
+
+.maincontainer .list ul li a {
+  text-decoration: none;
+  font-size: 15px;
+  color: whitesmoke;
+}
+
+.maincontainer .bars {
+  position: absolute;
+  top: 5px;
+  right: 12px;
+  height: 40px;
+  width: 40px;
+  background-color: crimson;
+}
+
+.maincontainer .bars:hover {
+  background-color: whitesmoke;
+  color: crimson;
+  cursor: pointer;
+}
+
+.maincontainer .socialmedia {
+  position: absolute;
+  bottom: 12px;
+  right: 20px;
+  height: 50px;
+  width: 120px;
+  border-radius: 10px;
+  background-color: whitesmoke;
+}
+
+.container3 {
+  position: relative;
+  height: 100vh;
+  background-image: url(img4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: crimson;
+}
+
+.last {
+  background-color: lightblue;
+  height: 100vh;
+  color: white;
+}
+
+@media screen and (max-width: 480px) {
+  .maincontainer .socialmedia {
+    display: none;
+  }
+  .maincontainer .list ul li:hover {
+    background-color: white;
+    border: 1px solid gray;
+  }
+  .maincontainer .list ul li a:hover {
+    color: crimson;
+  }
+  .maincontainer .bars {
+    padding: 10px;
+  }
+  .maincontainer .list ul li .fa {
+    color: whitesmoke;
+  }
+  .maincontainer .list ul li .fa:hover {
+    color: crimson;
+  }
+}
+@media (max-width: 768px) and (min-width: 480px) {
+  .maincontainer {
+    position: relative;
+    height: 100vh;
+  }
+  .maincontainer .logo {
+    position: relative;
+    top: 15px;
+    left: 10px;
+    background-color: pink;
+    border: 2px solid crimson;
+    height: 40px;
+  }
+  .maincontainer .logo h3 {
+    font-size: 26px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke;
+    background-color: crimson;
+  }
+  .maincontainer .logo h3 span {
+    background-color: whitesmoke;
+    color: crimson;
+  }
+  .maincontainer .bars {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    padding-left: 12px;
+    padding-top: 12px;
+  }
+  .maincontainer .socialmedia {
+    position: absolute;
+    height: 120px;
+    width: 23px;
+    display: flex;
+    justify-content: space-around;
+    right: 90px;
+    flex-direction: column;
+    padding-left: 5px;
+    box-shadow: 14px 12px rgb(233, 225, 225);
+  }
+  .maincontainer .list {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 45px;
+  }
+  .maincontainer .list ul {
+    position: relative;
+  }
+  .maincontainer .list ul li {
+    display: block;
+    border-radius: 12px;
+    width: 250px;
+    margin: 24px;
+    padding-left: 24px;
+    background-color: crimson;
+  }
+  .maincontainer .list ul li:hover {
+    background-color: whitesmoke;
+    border: 1px solid gray;
+  }
+  .maincontainer .list ul li a:hover {
+    color: crimson;
+  }
+  .maincontainer .list ul li .fa {
+    padding-right: 20px;
+    font-size: 18px;
+  }
+  .maincontainer .list ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    font-weight: 790;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .maincontainer {
+    position: relative;
+    height: 100vh;
+  }
+  .maincontainer .img {
+    position: absolute;
+    height: 300px;
+    width: 350px;
+    top: 134px;
+    right: 29px;
+    background-image: url(img05.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .maincontainer .img:hover {
+    background-color: black;
+    opacity: 0.7;
+  }
+  .maincontainer .logo {
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .maincontainer .logo h3 {
+    font-size: 38px;
+    letter-spacing: 2px;
+    font-family: monospace;
+    color: crimson;
+    background-color: whitesmoke;
+  }
+  .maincontainer .logo h3 span {
+    background-color: crimson;
+    color: whitesmoke;
+  }
+  .maincontainer .list {
+    position: absolute;
+    top: 90px;
+    left: 10px;
+  }
+  .maincontainer .list ul {
+    position: absolute;
+  }
+  .maincontainer .list ul li {
+    background-color: white;
+    border: 1px solid gray;
+    width: 350px;
+    padding-left: 20px;
+    margin: 26px;
+  }
+  .maincontainer .list ul li .fa {
+    font-size: 40px;
+    color: crimson;
+  }
+  .maincontainer .list ul li .fa:hover {
+    color: white;
+  }
+  .maincontainer .list ul li:hover {
+    background-color: crimson;
+  }
+  .maincontainer .list ul li a:hover {
+    color: whitesmoke;
+  }
+  .maincontainer .list ul li a {
+    text-decoration: none;
+    color: crimson;
+    font-size: 40px;
+  }
+  .maincontainer .bars {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    padding: auto;
+    padding-left: 12px;
+    padding-top: 12px;
+  }
+  .maincontainer .socialmedia {
+    position: absolute;
+    right: 176px;
+    top: 120px;
+    width: 330px;
+    height: 480px;
+    background-color: antiquewhite;
+    z-index: -120;
+  }
+  .container2 .myphoto {
+    background-image: url(1mg3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container2 .myphoto {
+    background-image: url(1mg3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .maincontainer .socialmedia {
+    display: none;
+  }
+  .container2 {
+    height: 100vh;
+    background-color: bisque;
+    margin-top: 25px;
+    position: relative;
+  }
+  .container2 .heading {
+    background-color: crimson;
+    padding-left: 45px;
+    height: 30px;
+  }
+  .container2 .heading h3 {
+    color: whitesmoke;
+  }
+  .container2 .profile {
+    position: absolute;
+    height: 150px;
+    width: 100px;
+    background-color: whitesmoke;
+    right: 10px;
+    top: 95px;
+  }
+  .container2 .profile h5 {
+    color: crimson;
+    padding-left: 6px;
+    font-size: 23px;
+  }
+  .container2 .profile p {
+    color: gold;
+    font-size: 19px;
+  }
+  .container2 .smallstory {
+    background-color: yellow;
+    height: 250px;
+    width: 120px;
+    position: absolute;
+    top: 60px;
+    left: 10px;
+  }
+  .container2 .myphoto {
+    height: 250px;
+    width: 220px;
+    position: absolute;
+    top: 124px;
+    left: 170px;
+    overflow: hidden;
+    background-color: crimson;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .container2 .myphoto {
+    background-image: url(1mg3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .container2 {
+    background-color: crimson;
+    margin: 25px;
+    height: 100vh;
+    position: relative;
+    padding-left: 25px;
+  }
+  .container2 .heading {
+    background-color: antiquewhite;
+    position: absolute;
+    height: 56px;
+    width: 100%;
+    padding-left: 100px;
+  }
+  .container2 .profile {
+    position: absolute;
+    height: 250px;
+    width: 234px;
+    background-color: whitesmoke;
+    top: 140px;
+    left: 50%;
+    transform: translateX(-30%);
+  }
+  .container2 .profile h5 {
+    color: crimson;
+    font-size: 18px;
+    padding: 12px;
+  }
+  .container2 .smallstory {
+    position: absolute;
+    height: 200px;
+    width: 133px;
+    top: 150px;
+    left: 14px;
+    color: whitesmoke;
+  }
+  .container2 .myphoto {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    bottom: 16px;
+    left: 23px;
+    background-color: aqua;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .container2 .myphoto {
+    background-image: url(1mg3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .container2 {
+    position: relative;
+    background-color: rgb(168, 21, 21);
+    height: 100vh;
+    margin-top: 21px;
+  }
+  .container2 .profile {
+    position: absolute;
+    top: 23px;
+    left: 50px;
+  }
+  .container2 .profile h4 {
+    color: crimson;
+    font-size: 27px;
+    font-family: monospace;
+    font-weight: bold;
+  }
+  .container2 .heading {
+    position: absolute;
+    height: 120px;
+    width: 100%;
+    font-size: 29px;
+    top: 23px;
+    padding-left: 223px;
+    background-color: saddlebrown;
+  }
+  .container2 .myphoto {
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    border-radius: 100%;
+    top: 178px;
+    left: 234px;
+    background-color: whitesmoke;
+  }
+  .container2 .profile {
+    position: absolute;
+    height: 240px;
+    width: 150px;
+    top: 240px;
+    left: 560px;
+  }
+  .container2 .profile h5 {
+    color: whitesmoke;
+    font-size: 27px;
+  }
+  .container2 .profile .para1 {
+    font-size: 18px;
+    color: whitesmoke;
+    padding-top: 45px;
+    padding-left: 17px;
+  }
+  .container2 .smallstory {
+    color: whitesmoke;
+    font-size: 19px;
+    font-family: monospace;
+    height: auto;
+    bottom: 12px;
+    position: absolute;
+    padding-left: 12px;
+  }
+}
+.newcontainer {
+  display: none;
+}
+
+.maincontainer .themechanger {
+  position: absolute;
+  top: 10px;
+  right: 150px;
+  background-color: black;
+  height: 45px;
+  width: 46px;
+}/*# sourceMappingURL=project05.css.map */
